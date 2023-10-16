@@ -1,0 +1,73 @@
+<div class="flex flex-col gap-5">
+    <div class="flex flex-col gap-3">
+        <div class="flex justify-between">
+            <div class="text-xl">{{ 'Categories' }}</div>
+            <button class="bg-red-400 rounded-lg">Add</button>
+        </div>
+
+        <div>
+            <div class="grid grid-cols-12 gap-3">
+                <div *ngFor="let some of [1,2,3,4,5,6,7,8,9,2,3,1,1,1,1]" class="flex flex-col items-center gap-1">
+                    <div class=" bg-white rounded-lg p-4 flex items-center justify-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2143/2143344.png" class="w-10 h-10" alt="">
+                    </div>
+                    <div>Imagenes</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-3">
+        <div class="flex justify-between">
+            <div class="text-xl">{{ 'Themes' }}</div>
+            <button class="bg-red-400 rounded-lg">Add</button>
+        </div>
+
+        <div>
+            <table class="table-auto w-full bg-white rounded-lg">
+                <thead>
+                    <tr class="border-b px-4">
+                        <th class="text-start p-4">Name</th>
+                        <th class="text-start p-4">File Item</th>
+                        <th class="text-start p-4">Last Modified</th>
+                        <th class="text-start p-4">File Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:cursor-pointer border-b">
+                        <td class="px-4">
+                            <div class="flex items-center gap-2">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg"
+                                    alt="" class="w-10 h-10">
+                                <div>Name</div>
+                            </div>
+                        </td>
+                        <td class="px-4">
+                            <div>100 items</div>
+                        </td>
+                        <td class="px-4">
+                            <div>{{ "2012-12-12" | date}}</div>
+                        </td>
+                        <td class="px-4">12 Gb</td>
+                    </tr>
+                    <tr class="hover:cursor-pointer border-b">
+                        <td class="px-4">
+                            <div class="flex items-center gap-2">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg"
+                                    alt="" class="w-10 h-10">
+                                <div>Name</div>
+                            </div>
+                        </td>
+                        <td class="px-4">
+                            <div>100 items</div>
+                        </td>
+                        <td class="px-4">
+                            <div>{{ "2012-12-12" | date}}</div>
+                        </td>
+                        <td class="px-4">12 Gb</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
